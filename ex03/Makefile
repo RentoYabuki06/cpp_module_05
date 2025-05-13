@@ -6,7 +6,7 @@
 #    By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/12 11:08:12 by ryabuki           #+#    #+#              #
-#    Updated: 2025/05/12 13:17:50 by ryabuki          ###   ########.fr        #
+#    Updated: 2025/05/13 16:55:28 by ryabuki          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,13 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic -Wshadow -g
 INCLUDES = -I includes
 
 SRCS =	srcs/main.cpp \
+		srcs/Bureaucrat.cpp \
+		srcs/AForm.cpp \
+		srcs/ShrubberyCreationForm.cpp \
+		srcs/RobotomyRequestForm.cpp \
+		srcs/PresidentialPardonForm.cpp \
+		srcs/Intern.cpp \
+
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -28,7 +35,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) garden_shrubbery
 
 fclean: clean
 	rm -f $(NAME)
