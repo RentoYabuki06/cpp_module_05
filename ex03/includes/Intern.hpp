@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 16:58:08 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/13 17:20:19 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/17 18:11:30 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BUREAUCRAT_HPP
-#define BUREAUCRAT_HPP
+#ifndef INTERN_HPP
+#define INTERN_HPP
 
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"

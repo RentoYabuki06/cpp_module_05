@@ -3,20 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ryabuki <ryabuki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabukirento <yabukirento@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:20:00 by ryabuki           #+#    #+#             */
-/*   Updated: 2025/05/13 17:20:06 by ryabuki          ###   ########.fr       */
+/*   Updated: 2025/05/17 18:12:11 by yabukirento      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Intern.hpp"
+#include "../includes/Intern.hpp"
 
 Intern::Intern() {}
 
-Intern::Intern(const Intern& other) {}
+Intern::Intern(const Intern& other) {
+	(void)other;
+}
 
-Intern& Intern::operator=(const Intern& other) { return *this; }
+Intern& Intern::operator=(const Intern& other) {
+	(void)other;
+	return *this;
+}
 
 Intern::~Intern() {}
 
@@ -48,4 +53,5 @@ AForm*	Intern::makeForm(const std::string& name, const std::string& target)
 		}
 	}
 	std::cout << "No form matches the provided name!" << std::endl;
+	return NULL;
 }
